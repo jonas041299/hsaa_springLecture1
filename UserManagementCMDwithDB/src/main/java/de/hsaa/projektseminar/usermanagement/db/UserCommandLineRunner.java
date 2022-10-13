@@ -1,7 +1,7 @@
 package de.hsaa.projektseminar.usermanagement.db;
 
-import de.hsaa.projektseminar.usermanagement.model.User;
-import de.hsaa.projektseminar.usermanagement.service.UserLoginService;
+import de.hsaa.projektseminar.usermanagement.db.model.User;
+import de.hsaa.projektseminar.usermanagement.db.service.UserLoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
 package de.hsaa.projektseminar.usermanagement.db.service;
 
-import de.hsaa.projektseminar.usermanagement.model.User;
+import de.hsaa.projektseminar.usermanagement.db.model.User;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
