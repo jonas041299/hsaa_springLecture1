@@ -5,6 +5,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>UserManagementCommandLineRunner</module>
+		<module>UserManagementCMDwithDB</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
