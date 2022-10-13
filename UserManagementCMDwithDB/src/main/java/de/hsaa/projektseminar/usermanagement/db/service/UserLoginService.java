@@ -1,26 +1,23 @@
 package de.hsaa.projektseminar.usermanagement.db.service;
 
 import de.hsaa.projektseminar.usermanagement.db.model.User;
+import de.hsaa.projektseminar.usermanagement.db.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Optional;
 
 @Component
 public class UserLoginService {
 
-    Map<String, User> userDB = new HashMap<>();
-
-    {
-        User ufuk = new User("u.altin", "1234", "Ufuk Altin");
-        userDB.put(ufuk.getUsername(), ufuk);
-    }
+    @Autowired
+    private UserRepository userRepository;
 
     public Optional<User> login(String username, String password) {
 
-        if (userDB.containsKey(username) && userDB.get(username).getPassword().equals(password)) {
-            return Optional.of(userDB.get(username));
+        Optional<User> foundUser = userRepository.findById(username);
+        if (foundUser.isPresent() && foundUser.get().getPassword().equals(password)) {
+            return foundUser;
         }
         return Optional.empty();
     }
