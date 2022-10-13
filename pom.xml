@@ -7,6 +7,7 @@
 		<module>UserManagementCommandLineRunner</module>
 		<module>UserManagementCMDwithDB</module>
 		<module>UserManagementRest</module>
+		<module>UserManagementRestTested</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
