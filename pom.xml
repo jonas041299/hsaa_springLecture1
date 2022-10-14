@@ -8,7 +8,8 @@
 		<module>UserManagementCMDwithDB</module>
 		<module>UserManagementRest</module>
 		<module>UserManagementRestTested</module>
-	</modules>
+        <module>UserManagementFlyway</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
