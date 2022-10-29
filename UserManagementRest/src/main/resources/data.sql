@@ -1,5 +1,5 @@
-INSERT INTO USER_TABLE (username, password, given_name)
-VALUES ('m.musterman', '1234', 'Max Mustermann');
+INSERT INTO PRODUCT_TABLE (id, name, currency, price)
+VALUES (1, 'iPhone', 'USD', 1100);
 
-INSERT INTO USER_TABLE (username, password, given_name)
-VALUES ('u.altin', '1234', 'Ufuk Altin');
+INSERT INTO PRODUCT_TABLE (id, name, currency, price)
+VALUES (2, 'PS5', 'EUR', 599);

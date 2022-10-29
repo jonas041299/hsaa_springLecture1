@@ -1,6 +1,6 @@
-package de.hsaa.projektseminar.usermanagement.controller;
+/*package de.hsaa.projektseminar.usermanagement.controller;
 
-import de.hsaa.projektseminar.usermanagement.model.User;
+import de.hsaa.projektseminar.usermanagement.model.Product;
 import de.hsaa.projektseminar.usermanagement.service.UserLoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,7 +19,7 @@ public class UserController {
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestParam String username, @RequestParam String password) {
 
-        Optional<User> user = loginService.login(username, password);
+        Optional<Product> user = loginService.login(username, password);
 
         if (user.isPresent()) {
             return new ResponseEntity<>(String.format("Welcome %s!", user.get().getGivenName()), HttpStatus.OK);
@@ -28,4 +28,4 @@ public class UserController {
         }
     }
 
-}
+}*/
